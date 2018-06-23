@@ -1,0 +1,58 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Cotización de Prestamo</title>
+    <!-- Favicons-->
+    <link rel="icon" href="{% static 'images/favicon/favicon-32x32.png' %}" sizes="32x32">
+    <!-- Favicons-->
+    <link rel="apple-touch-icon-precomposed" href="{% static 'images/favicon/apple-touch-icon-152x152.png' %}">
+    <!-- For iPhone -->
+    <meta name="msapplication-TileColor" content="#00bcd4">
+    <meta name="msapplication-TileImage" content="{% static 'images/favicon/mstile-144x144.png' %}">        
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="{% static 'css/materialize.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="{% static 'css/style.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+    <nav class="light-blue lighten-1" role="navigation">
+        <div class="nav-wrapper container">            
+            <a href="{% url 'home' %}" class="brand-logo" id="logo-container">
+                <img src="{% static 'images/favicon/favicon-32x32.png' %}" alt="materialize logo">
+                <span class="logo-text hide-on-med-and-down">Cotizador</span>
+            </a>
+        </div>
+    </nav>
+
+    <div class="section no-pad-bot" id="index-banner">
+        <h1 class="header center orange-text">{% block title %}{% endblock %}</h1>                    
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <div class="row">
+                {% block container %}{% endblock %}
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer orange">
+        <div class="container">
+            <div class="footer-copyright">
+                <div class="container">
+                    Desarrollado por <a class="orange-text text-lighten-3" href="http://github.com/chingal">Rodrigo Chingal</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="{% static 'js/materialize.js' %}"></script>
+  <script src="{% static 'js/init.js' %}"></script>
+  {% block js %}{% endblock %}
+  </body>
+</html>
