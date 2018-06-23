@@ -1,4 +1,4 @@
-Cotizador de Préstamos
+Cotizador de Préstamos en Django
 ======================
 Cotizador de un prestamo para clientes, donde se ingresar el monto requerido y el sistema
 automáticamente calcula la mejor cotización.
