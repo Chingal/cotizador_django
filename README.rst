@@ -15,6 +15,20 @@ Requisitos:
 * Si el sistema no cuenta con un socio que pueda cubrir la solicitud el sistema debe mostrar un mensaje diciendo “​No hay socio disponible​”.
 * La cotización debe estar disponible a través de un servicio web implementado con SOAP o REST, el servicio debe recibir como parámetro el monto del préstamo.
 
+Web Serivice
+========
+* **URL**: ``/CotizadorWS/?Tesst``
+
+* **METHOD**: ``GET``
+
+* **Success Response**:
+    * **Code**: ``200 OK``
+    * **Content**:
+
+.. code-block:: xml
+      ?monto=4000000
+  
+
 Creditos
 -------
 
