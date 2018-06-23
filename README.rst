@@ -17,7 +17,7 @@ Requisitos:
 
 Web Serivice
 ========
-* **URL**: ``/CotizadorWS/?Tesst``
+* **URL**: ``/api/ws/cotizacion/?monto=4000000``
 
 * **METHOD**: ``GET``
 
