@@ -25,9 +25,38 @@ Web Serivice
     * **Code**: ``200 OK``
     * **Content**:
 
-.. code-block:: xml
-      ?monto=4000000
-  
+.. code-block:: json
+
+    	?status=PENDING
+	
+* **Success Response**:
+    * **Code**: ``200 OK``
+    * **Content**:
+
+.. code-block:: json
+	   {
+                "count": 3,
+        	"next": null,
+        	"previous": null,
+        	"results": [
+		    {
+                	"url": "http://localhost:8000/api/tickets/1/",
+                	"user": "admin",
+                	"limit": 5,
+                	"status": "PENDING",
+                	"files": [
+                    	    {
+                        	"file": "/media/upload/admin/image1.png",
+                        	"ticket": 1
+                    	    },
+                    	    {
+	                       	"file": "/media/upload/admin/image2.png",
+        	               	"ticket": 1
+                	    }
+                	]
+            	    }
+		]
+	   }
 
 Creditos
 -------
