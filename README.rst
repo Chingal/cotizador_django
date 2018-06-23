@@ -24,10 +24,10 @@ Web Serivice
 * **Success Response**:
     * **Code**: ``200 OK``
     
-* **URL Params**: ``metodo``
+* **URL Params**: ``monto``
 
 	.. code-block:: json
-    	?status=PENDING
+    	?monto=4000000
 
 Creditos
 -------
